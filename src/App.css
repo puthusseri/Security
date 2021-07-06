@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+}
+
+body{
+  background-color:#1a1a1d;
+  color:whitesmoke
+}
+.NavBar{
+  display:flex;
+  margin-top: 10px;
+
+}
+.Heading{
+  width:75%;
+  /* background-color:red */
+}
+.loginButton{
+  /* margin-left: 50%; */
+
+
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  
+  position: absolute;
+  right:0%;
+  top : 5%;
+  border-color: white;
+  color:white;
+  background: none;
+  font-size: 40px;
+  border-radius: 50px;
+  border-width: 2px;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+  width: 225px;
+  text-align: center;
+
+  
+}
+#button:hover {
+  animation-name: buttonHoverAni;
+  animation-duration: 1s;
+  font-size: 49px;
+}
+#button:focus {
+  outline: none;
+  animation-name: buttonFocusAni;
+  animation-duration: 1s;
+}
+#button:focus:after {
+  content: "NE";
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
