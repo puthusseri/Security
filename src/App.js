@@ -39,14 +39,11 @@ function login(){
 })
 
 myPromis.then((hash_data) => {
-console.log("Inside the success function, hash data : "+hash_data);
-var access_code = hash_data.match('[#&]access_token=*[^&]*')[0].split("=")[1]; 
-console.log("Access code = "+access_code);      
-// localStorage.access_code = access_code;
-// console.log(access_code);
-
-// copyContent();
-// 
+  // console.log("Inside the success function, hash data : "+hash_data);
+var access_code = "token="+hash_data.match('[#&]access_token=*[^&]*')[0].split("=")[1]; 
+// console.log("Access code = "+access_code);  
+document.cookie = access_code;
+console.log("Do the call to get the home page")
 
 }).catch((messge) => {
 console.log("Inside the failed function"+messge);
